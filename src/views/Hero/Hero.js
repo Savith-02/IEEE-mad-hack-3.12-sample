@@ -43,16 +43,24 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
+      <div className="image-container">
+        <img src="/assets/images/spear.png" alt="logo" className="logo" />
+      </div>
       <video autoPlay loop muted className="background-video">
         <source src="/assets/videos/background.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <span className="top">By IEEE studentBranch of UCSC</span>
-      <span className="middle">MAD HACK 3.0</span>
-      <span className="bottom">
-        {currentSentence}
-        <span className="cursor">|</span>
-      </span>
+      <div className="content">
+        <span className="top">&lt;/ IEEE Student Branch of UCSC /&gt;</span>
+        <span className="middle">MAD HACK 3.12</span>
+        <span className="bottom">
+          {currentSentence}
+          <span className="cursor">|</span>
+        </span>
+      </div>
+      <div className="image-container">
+        <img src="/assets/images/spear.png" alt="logo" className="logo" />
+      </div>
     </div>
   );
 };
