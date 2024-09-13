@@ -1,0 +1,122 @@
+.main-header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  padding: 0.6rem 0.8rem;
+  height: var(--navbar-height);
+  background-color: var(--background-color);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+
+  --icon-height: 3rem;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: 3rem;
+
+    .logo {
+      height: var(--icon-height);
+      width: auto;
+    }
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .nav-toggler {
+    display: none;
+    color: var(--color);
+    font-size: 2.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .tabs {
+    color: var(--color);
+    top: 2.5rem;
+    left: 3rem;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1.8rem;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    z-index: 8;
+    transition: transform 0.3s ease-in-out;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    .tab-buttons {
+      z-index: 8;
+      padding: 0.3rem 1rem;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        height: 1.5rem;
+
+        li {
+          margin-right: 20px;
+
+          a {
+            text-decoration: none;
+            color: var(--color);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-toggler {
+      display: block;
+    }
+
+    .tabs {
+      flex-direction: column;
+      position: fixed;
+      background-color: var(--background-color);
+      align-items: flex-start;
+      overflow: visible;
+      right: 0;
+      left: unset;
+      top: var(--navbar-height);
+      bottom: 0;
+      width: 15rem;
+      height: 100vh;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+
+      &.open {
+        transform: translateX(0);
+      }
+
+      .tab-buttons ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        padding-top: 2rem;
+      }
+
+      .tab-buttons li {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: calc(100vh - var(--navbar-height));
+  background-color: var(--background-color);
+  text-align: center;
+  color: var(--color);
+  padding: 0 5rem;
+  // font-family: 'NeueMachina';
+  position: relative;
+
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.6;
+  }
+  span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    &.middle {
+      font-family: 'AquireBold', 'Roboto';
+      font-size: 6rem;
+      color: var(--light-blue);
+    }
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: inherit;
+    color: var(--light-blue);
+    margin-left: 2px;
+    animation: blink 0.7s steps(1) infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
