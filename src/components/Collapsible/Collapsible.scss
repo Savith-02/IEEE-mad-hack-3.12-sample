@@ -1,25 +1,40 @@
 .collapsible {
-  border: 1px solid var(--blue-300);
+  border: 1px solid var(--color);
   border-radius: 4px;
   margin-bottom: 10px;
   overflow: hidden;
+  width: 80%;
 
   .collapsible-header {
-    background-color: var(--light-blue);
-    color: black;
-    padding: 10px;
+    // background-color: var(--light-blue);
+    background-color: inherit;
+    color: var(--light-blue);
+    color: var(--color);
+    padding: 1rem;
     width: 100%;
     text-align: left;
     border: none;
     cursor: pointer;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+      transition: transform 0.3s ease;
+    }
+
+    &.rotate i {
+      transform: rotate(180deg);
+    }
   }
 
   .collapsible-content {
     padding: 10px;
     background-color: var(--background-color);
     color: var(--color);
+    color: var(--light-blue);
     border-top: 1px solid var(--blue-300);
   }
 }

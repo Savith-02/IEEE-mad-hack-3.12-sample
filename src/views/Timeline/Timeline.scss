@@ -20,11 +20,21 @@
     margin: 10px 0;
     padding-left: 50%;
     text-align: left;
-
+    h2 {
+      color: var(--light-blue);
+    }
     &:nth-child(odd) {
       padding-left: 0;
       padding-right: 50%;
       text-align: right;
+
+      .timeline-content {
+        &:before {
+          left: auto;
+          right: 1px;
+          transform: translateX(50%);
+        }
+      }
     }
 
     .timeline-content {
