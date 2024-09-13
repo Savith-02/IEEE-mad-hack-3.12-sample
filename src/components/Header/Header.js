@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 
 const tabs = [
   { text: 'Home', url: '/', isActive: true },
-  { text: 'About', url: '/student-requests', isActive: false },
-  { text: 'Timeline', url: '/create-assistant', isActive: false },
-  { text: 'Prizes', url: '/create-assistant', isActive: false },
-  { text: 'FAQ', url: '/reg-staff', isActive: false },
-  { text: 'Contact us', url: '/reg-staff', isActive: false },
-  { text: 'Task', url: '/reg-staff', isActive: false },
+  { text: 'About', url: '/about', isActive: false },
+  { text: 'Timeline', url: '/timeline', isActive: false },
+  { text: 'Prizes', url: '/prizes', isActive: false },
+  { text: 'FAQ', url: '/faq', isActive: false },
+  { text: 'Contact us', url: '/contact', isActive: false },
+  { text: 'Task', url: '/task', isActive: false },
 ];
 
 const Header = () => {
