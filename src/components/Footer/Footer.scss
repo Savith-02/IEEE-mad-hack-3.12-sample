@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  text-align: center;
+  color: var(--color);
+  --footer-icon: 4rem;
+  .footer-icon {
+    margin-bottom: 10px;
+
+    img {
+      width: 15rem;
+      height: auto;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 10px;
+
+    a {
+      margin: 0 10px;
+      height: var(--footer-icon);
+      width: var(--footer-icon);
+      font-size: 2rem; // Icon size
+
+      i::before {
+        color: var(--color);
+      }
+    }
+  }
+
+  span {
+    font-size: 1em;
+    color: #c0c0c0;
+  }
+}

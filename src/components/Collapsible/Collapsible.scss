@@ -1,0 +1,25 @@
+.collapsible {
+  border: 1px solid var(--blue-300);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+
+  .collapsible-header {
+    background-color: var(--light-blue);
+    color: black;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.2rem;
+  }
+
+  .collapsible-content {
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--color);
+    border-top: 1px solid var(--blue-300);
+  }
+}

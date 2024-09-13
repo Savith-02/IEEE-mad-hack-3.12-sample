@@ -1,0 +1,21 @@
+.prizes {
+  .prizes-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 0 0;
+
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .cups {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 8rem;
+
+    .prize-card {
+      flex: 1;
+      margin: 0 10px;
+    }
+  }
+}

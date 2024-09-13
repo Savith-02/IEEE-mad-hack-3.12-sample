@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Notfound from './components/NotFound/NotFound';
 import UnderDev from './components/underDev/UnderDev';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/task" element={<UnderDev />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

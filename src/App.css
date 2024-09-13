@@ -31,4 +31,5 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
