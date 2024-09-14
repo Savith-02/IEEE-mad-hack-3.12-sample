@@ -37,10 +37,6 @@ const App = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/about" element={<UnderDev />} />
-          <Route path="/timeline" element={<UnderDev />} />
-          <Route path="/prizes" element={<UnderDev />} />
-          <Route path="/faq" element={<UnderDev />} />
           <Route path="/contact" element={<UnderDev />} />
           <Route path="/task" element={<UnderDev />} />
           <Route path="*" element={<Notfound />} />

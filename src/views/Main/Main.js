@@ -12,11 +12,11 @@ import { faqs } from '../FAQ/data';
 const Main = () => {
   return (
     <div className="main-container">
-      <Hero />
-      <Intro sections={sections} />
-      <Timeline events={hackathonEvents} />
-      <Prizes />
-      <FAQ faqs={faqs} />
+      <Hero id="home" />
+      <Intro sections={sections} id="about" />
+      <Timeline events={hackathonEvents} id="timeline" />
+      <Prizes id="prizes" />
+      <FAQ faqs={faqs} id="faq" />
     </div>
   );
 };

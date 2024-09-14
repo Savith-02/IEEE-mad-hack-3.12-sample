@@ -2,9 +2,9 @@ import React from 'react';
 import PrizeCard from './../../components/PriceCard/PriceCard';
 import './Prizes.scss';
 
-const Prizes = () => {
+const Prizes = ({ id }) => {
   return (
-    <section className="prizes">
+    <section className="prizes" id={id}>
       <div className="prizes-header">Prizes</div>
       <div className="cups">
         <PrizeCard

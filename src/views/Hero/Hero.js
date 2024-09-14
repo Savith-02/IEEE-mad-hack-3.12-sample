@@ -7,7 +7,7 @@ const sentences = [
   'Empowering the next generation of tech leaders.',
 ];
 
-const Hero = () => {
+const Hero = ({ id }) => {
   const [currentSentence, setCurrentSentence] = useState('');
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -42,7 +42,7 @@ const Hero = () => {
   }, [charIndex, isDeleting, sentenceIndex]);
 
   return (
-    <div className="hero-container">
+    <div className="hero-container" id={id}>
       <div className="image-container">
         <img src="/assets/images/spear.png" alt="logo" className="logo" />
       </div>

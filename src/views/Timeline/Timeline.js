@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Timeline.scss';
 
-const Timeline = ({ events }) => {
+const Timeline = ({ events, id }) => {
   const timelineRef = useRef(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Timeline = ({ events }) => {
   }, [events]); // Re-run effect if events change
 
   return (
-    <div className="timeline" ref={timelineRef}>
+    <div className="timeline" ref={timelineRef} id={id}>
       {events.map((event, index) => (
         <div className="timeline-item" key={index}>
           <div className="timeline-content">

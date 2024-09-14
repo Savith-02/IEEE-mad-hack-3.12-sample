@@ -1,9 +1,9 @@
 import React from 'react';
 import './Intro.scss';
 
-const Intro = ({ sections }) => {
+const Intro = ({ sections, id }) => {
   return (
-    <div className="intro-container">
+    <div className="intro-container" id={id}>
       {sections.map((section, index) => (
         <div
           key={index}
