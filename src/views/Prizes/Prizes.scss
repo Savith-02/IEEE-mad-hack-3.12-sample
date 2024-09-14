@@ -19,3 +19,35 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .prizes {
+    .prizes-header {
+      font-size: 2.5rem;
+    }
+    .cups {
+      padding: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      .prize-card {
+        margin: 10px;
+        height: 8rem;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .prizes {
+    .prizes-header {
+      font-size: 2rem;
+    }
+    .cups {
+      padding: 1rem;
+      flex-direction: column;
+      .prize-card {
+        margin: 5px;
+      }
+    }
+  }
+}

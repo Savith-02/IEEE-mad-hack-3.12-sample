@@ -38,3 +38,21 @@
     border-top: 1px solid var(--blue-300);
   }
 }
+
+@media (max-width: 768px) {
+  .collapsible {
+    width: 100%;
+
+    .collapsible-header {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .collapsible {
+    .collapsible-header {
+      font-size: 1rem;
+    }
+  }
+}

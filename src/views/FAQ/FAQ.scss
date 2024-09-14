@@ -8,3 +8,17 @@
   justify-content: center;
   gap: 0.4rem;
 }
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 10px;
+    gap: 0.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq {
+    padding: 5px;
+    gap: 0.1rem;
+  }
+}

@@ -79,3 +79,37 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 0 2rem;
+    gap: 3rem;
+
+    .image-container {
+      .logo {
+        width: 4rem;
+      }
+    }
+
+    div span.middle {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    padding: 0 1rem;
+    gap: 2rem;
+
+    .image-container {
+      .logo {
+        width: 3rem;
+      }
+    }
+
+    div span.middle {
+      font-size: 3rem;
+    }
+  }
+}
