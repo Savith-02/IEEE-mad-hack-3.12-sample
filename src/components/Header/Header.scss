@@ -96,7 +96,8 @@
       overflow: visible;
       right: 0;
       left: unset;
-      top: var(--navbar-height);
+      top: 0;
+      padding-top: calc(var(--navbar-height) / 2);
       bottom: 0;
       width: 15rem;
       height: 100vh;
